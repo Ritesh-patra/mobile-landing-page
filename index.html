@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .detailscontainer {
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+        background-color: transparent;
+    }
+</style>
+
+<body>
+    <div class="w-full h-screen bg-black font-['Helvetica'] ">
+        <div class="imagcontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard w-[110%] h-[110%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute z-[3] ">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div
+                class="upcomingcard w-[110%] h-[110%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute z-[2] ">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+
+        <div class="flex justify-between flex-col absolute w-full h-full left-[0] top-[0] z-[4] ">
+            <div class="navbar flex items-center justify-between px-5 py-6">
+                <div class="navimg w-[4rem] overflow-hidden h-[4rem] rounded-full">
+                    <img class="w-full h-full object-cover" src="" alt="">
+                </div>
+                <h3 class="text-white tracking-tighter text-lg">They liked you</h3>
+                <div class="w-[4rem]  h-[4rem] bg-sky-200 rounded-full relative flex items-center justify-center">
+                    <div
+                        class="massagecontain w-[1.2rem] h-[1.2rem] p-[1px] flex items-center justify-center rounded-full bg-red-600 absolute top-0 right-0 -translate-x[1/2%]">
+                        <h5 class="text-xs text-white">25</h5>
+                    </div>
+                    <i class=" text-white text-2xl ri-chat-3-fill"></i>
+                </div>
+            </div>
+
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-6 text-white">
+                    <div class="elem flex items-center gap-5">
+                        <div class=" w-[2rem] h-[2rem] flex items-center justify-center rounded-full bg-white"> <i
+                                class="text-black ri-corner-left-up-fill"></i></div>
+                        <h1 class="location">USA, Calrlifornia</h1>
+                    </div>
+                    <div class="elem flex gap-5 mt-1">
+                        <h1 class="name text-6xl ">Victoria</h1>
+                        <h1 class="age text-6xl text-white/50">20</h1>
+                    </div>
+                    <div class="elem tag flex  items-center mt-3 gap-5">
+                        <div class="flex gap-2 bg-white/50 rounded-2xl px-2 py-1">
+                            <i class="ri-music-2-fill"></i>
+                            <h5>Music</h5>
+                        </div>
+                    </div>
+                    <div class="elem bio">
+                        <h1 class="mt-4">Bio</h1>
+                        <p class="w-50%"></p>
+                    </div>
+                    <div class="elem flex justify-center mt-4 gap-2">
+                        <button class="deny  bg-white w-[45%] py-2   rounded-xl"><i
+                                class="text-2xl text-black ri-close-line"></i></button>
+                        <button class="accept bg-red-600 w-[45%] py-2 rounded-xl"><i
+                                class="text-2xl ri-heart-2-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
